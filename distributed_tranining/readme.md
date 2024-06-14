@@ -11,9 +11,9 @@ please refer to [nccl-tests](https://github.com/NVIDIA/nccl-tests)
 This script is `bash nccl_test.sh` is about how we test bandwith in bitdeer.ai platform, you can change the host . 
 
 ```
-# cat host 
-csl-dgx1v-1 slots=12
-csl-server3 slots=12
+# cat hosts 
+csl-dgx1v-1 slots=8
+csl-server3 slots=8
 ```
 
 ```
