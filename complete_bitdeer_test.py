@@ -7,6 +7,17 @@ import pytest
 
 ##################
 ####
+#### set for openai 
+
+#MODEL_NAME = "gpt-4o-mini"
+#client =openai. OpenAI(api_key="sk-ac47gsEsGuxxxxxxxxx")
+
+####
+##################
+
+
+##################
+####
 #### set for local server, vLLM
 MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
 #client =openai. OpenAI(base_url="http://127.0.0.1:8002/v1/",api_key="123")
@@ -19,7 +30,29 @@ MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
 ####
 ##################
 
-print ("please paste the setting or uncomment MODEL_NAME and client in here, then delete the exit")
+
+
+##################
+####
+#### set for nvidia NIM
+
+#MODEL_NAME = "meta/llama-3.2-3b-instruct"
+#client =openai. OpenAI(base_url="https://integrate.api.nvidia.com/v1", api_key="nvapi-xxxxxxxxx")
+
+####
+##################
+
+##################
+####
+#### set for bitdeer
+#MODEL_NAME = "meta/llama-3.1-8b-instruct"
+#client =openai. OpenAI(base_url="https://www.bitdeer.ai/api/inference/v1/",api_key="xxxxxxxx")
+
+####
+##################
+
+
+print ("please paste the setting or uncomment MODEL_NAME and client in then above, then delete the exit")
 exit(1 )
 
 #global_messages=[{"role":"system","content":"you are a helpful coding assistant"},{"role": "user", "content": "you are tasking to output the code to implementation the fibonacci sequence "}]
